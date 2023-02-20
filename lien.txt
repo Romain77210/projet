@@ -1,0 +1,13 @@
+premier capteur :
+https://www.gotronic.fr/art-capteur-de-flexion-74-mm-fs2l055-30852.htm
+
+
+deuxième capteur : 
+https://www.gotronic.fr/art-capteur-de-flexion-112-mm-fs2l095-30853.htm
+
+arduino:
+https://www.gotronic.fr/art-arduino-uno-12420.htm
+
+
+shield : 
+https://www.gotronic.fr/art-shield-bluetooth-v2-1-113030019-23080.htm
