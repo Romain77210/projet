@@ -1,4 +1,6 @@
 //main gauche
+
+//essai modif
 int a = 0; // oriculaire
 int z = 0; // anulaire
 int e = 0; // majeur
