@@ -1,0 +1,49 @@
+int q ;
+int s ;
+int d ;
+int f ;
+int g ;
+float a;
+float z;
+float e;
+float r;
+float t;
+
+void setup() {
+  Serial.begin(9600);
+}
+void loop() {
+
+  q = analogRead(A0);
+  a = map(q,6,33,0,100);
+  
+  s = analogRead(A1);
+  z = map(s,6,33,0,100);
+  
+  d = analogRead(A2);
+  e = map(d,6,33,0,100);
+  
+  f = analogRead(A3);
+  r = map(f,6,33,0,100);
+  
+  g = analogRead(A4);
+  t = map(g,6,33,0,100);
+  //Serial.println(potar/1000);
+
+ //if (potar>1000) {
+ //Serial.println("allumer la led 1");
+//}
+
+  //Serial.println ("x");
+  //Serial.println (x);
+  
+  //Serial.println ("potar");
+  //Serial.println (potar);
+  
+  
+  Serial.println (a);
+  Serial.println (z);
+  Serial.println (e);
+  Serial.println (r);
+  Serial.println (t);
+}
