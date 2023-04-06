@@ -1,0 +1,34 @@
+#include <SoftwareSerial.h>
+const int potar = A0; // le bouton est connecté à la broche A0 de la carte Adruino
+SoftwareSerial hc06(2, 3);
+int g;
+int t;
+
+void setup() {
+  hc06.begin(9600);
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  alphabet ();
+
+  g = analogRead(potar);
+  t = map(g, 0, 1023, 0, 100);
+
+  //hc06.println(t); // envoie du message vers le smartphone
+  Serial.println(t);
+  delay(500);
+
+}
+
+
+
+void alphabet () {
+  if (g > 90) {
+    hc06.println("pouce en l'air");
+  }
+   if (g == 0) {
+    hc06.println("pouce fermé");
+  }
+}
